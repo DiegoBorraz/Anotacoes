@@ -1,9 +1,9 @@
 import React from 'react';
-import { ScrollView ,StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-
-
+import Header from './src/components/Header' 
 import List from './src/components/List'
+
 
 export default class App extends React.Component {
     constructor(props){
@@ -15,14 +15,27 @@ export default class App extends React.Component {
 
     render(){
         return(
-            <View>
+            <View style={styles.container}> 
+              <Header  />
               <List/>
             </View>
         );
     }
 }
 const styles = StyleSheet.create({
-    
+    container: {
+      height: '100%',
+      backgroundColor:'#EB5B14'
+    }
 
 
   });
+
+  /*
+#F7E401
+#EB5B14
+#70DB00
+#EA171D
+#309EE9
+
+*/

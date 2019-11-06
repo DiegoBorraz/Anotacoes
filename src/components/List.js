@@ -7,109 +7,18 @@ const List = props => {
         
     return (
         <ScrollView >
-              <View style={styles.list}>
+            <View style={styles.list}>
                 <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    <Text style={styles.item}>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Text>
-                  </Card>
+                    <Card  
+                    title="Titulo1" 
+                    containerStyle={{
+                        backgroundColor: '#F7E401'
+                    }} >
+                        <Text style={styles.item}>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Text>
+                    </Card>
                 </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View><View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-                <View style={styles.container}>
-                  <Card title="Titulo1" style={styles.card}>
-                    
-                  </Card>
-                </View>
-              </View>
-              
-            </ScrollView>
+            </View>
+        </ScrollView>
     )
 };
 const styles = StyleSheet.create({
@@ -128,13 +37,9 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignContent: 'space-between',
         width: '50%',
-        
-      },
-      card: {
-        width: '50%',
       },
       item: {
-        height: 1
+        height: 1,
   
       }
     
