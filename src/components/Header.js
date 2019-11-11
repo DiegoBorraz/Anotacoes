@@ -1,14 +1,31 @@
 import React from 'react';
-import { Alert, Button, StyleSheet, Text, View } from 'react-native';
+import { Alert, Button, StyleSheet, Text,TextInput, View } from 'react-native';
 
 
-const  Header = props =>  {
+
+export default function Header({ navigation }) {
     
+  
+    const [value, onChangeText] = React.useState('Useless Placeholder');
         return(
             <View>
                 <View style={styles.container}>
-                    <Text style={styles.title}>HEADER</Text>
-                    <Button title="Add" onPress={() => Alert.alert('ADD Anotação')}/>
+                    <TextInput
+                        style={styles.input}
+                        onChangeText={text => onChangeText(text)}
+                        value={value}
+                    />
+                    <View style={styles.button}> 
+                        <Button
+                            title="?"
+                        />
+                    </View>
+                    <View style={styles.button}>
+                        <Button
+                            title="Add"
+                            onPress={() => navigation.navigate('CreateNote')}
+                        />
+                    </View>
                 </View>
                 
             </View>
@@ -17,16 +34,20 @@ const  Header = props =>  {
 
 const styles = StyleSheet.create({
     container: {
-        height: 100,
-        backgroundColor: "#70DB00",
-        marginBottom: 10
+        height: 50,
+        backgroundColor: "#E50024",
+        flexDirection: 'row',
+        
 
-    }, title: {
-        marginTop: 30,
-        fontSize: 30,
-        textAlign: 'center',
+    }, input: {
+        fontSize: 20,
+        backgroundColor: '#FFFFFF',
+        margin: 10,
+        flex: 4
        
+    }, button:{
+        margin: 10,
+        alignContent: 'center',
+        flex: 1
     }
   });
-
-  export default Header;
